@@ -1,6 +1,7 @@
 // Make sure to include the `ui.router` module as a dependency
 angular.module('uiRouterSample', [
   'uiRouterSample.login',
+  'uiRouterSample.home',
   'ui.router', 
   'ngAnimate'
 ])
