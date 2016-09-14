@@ -20,12 +20,7 @@ angular.module('uiRouterSample.home', [
               templateUrl: 'app/home/home.html',
               controller: ['$scope', '$state',
                 function (  $scope,   $state) {
-                
                   alert("in home controller");
-                  
-                  $scope.executeHomeFunctionality = function () {
-                    // Execute Home Functionality
-                  };
                 }]
             },
 
@@ -34,9 +29,7 @@ angular.module('uiRouterSample.home', [
             }
           }
         })
-        .state('logout2', {
-        url: 'logout2',
-        });
+        ;
     }
   ]
 );
