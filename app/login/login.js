@@ -22,9 +22,8 @@ angular.module('uiRouterSample.login', [
               controller: ['$scope', '$state',
                 function (  $scope,   $$state) {
                   
-                  alert('in login controller');
-
                   $scope.executeLogin = function () {
+                    alert('switch to home view');
                     $state.go('home');
                   };
                 }]
