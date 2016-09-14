@@ -1,3 +1,67 @@
-<h1>UI Development Testing</h1>
-<br>
-<h3>Using Technologies - ANgularJS, BootStrap and UI-Router</h3>
+<!doctype html>
+<!-- Our uiRouterSample module defined here -->
+<html lang="en" ng-app="uiRouterSample">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- using twitter bootstrap, but of course -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <!-- styles for ng-animate are located here -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- Include angular.js, angular-animate.js and angular-ui-router.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    
+    <!-- UI Grid for Grid and Tree Component -->
+    <script src="https://ui-grid.info/release/ui-grid.js"></script>
+    <link rel="stylesheet" href="https://ui-grid.info/release/ui-grid.css">
+
+    <!-- app.js declares the uiRouterSample module and adds items to $rootScope, and defines
+         the "home" and "about" states
+    -->
+    <script src="app/app.js"></script>
+
+    <!-- all the remaining js files are declared here -->
+    <script src="app/consoles/consoles.js"></script>
+    <script src="app/editor/editor.js"></script>
+    <script src="app/editor/editor-element.js"></script>
+    <script src="app/login/login.js"></script>
+    <script src="app/home/home.js"></script>
+    <script src="app/about/about.js"></script>
+
+    <!-- all the services files are declared here -->
+    <script src="app/consoles/consoles-service.js"></script>
+    <script src="app/editor/editor-service.js"></script>
+    <script src="common/utils/utils-service.js"></script>
+    <script src="common/utils/singleton-service.js"></script>
+    
+    <!-- could easily use a custom property of the state here instead of 'name' -->
+    <title ng-bind="$state.current.name + ' - ui-router'">ui-router</title>
+  </head>
+  <body>
+    
+    <div ui-view="navigation-bar"></div>
+    
+    <!-- Here is the main ui-view (unnamed) and will be populated by its immediate children's templates
+         unless otherwise explicitly named views are targeted. It's also employing ng-animate. -->
+    <div ui-view class="container fluid" style="background-color: white;"></div>
+
+
+    <hr>
+    <pre>
+      <!-- Here's some values to keep an eye on in the sample in order to understand $state and $stateParams -->
+      $state = {{$state.current.name}}
+      $stateParams = {{$stateParams}}
+      $state full url = {{ $state.$current.url.source }}
+      <!-- $state.$current is not a public api, we are using it to
+           display the full url for learning purposes-->
+    </pre>
+  </body>
+</html>
+
+
