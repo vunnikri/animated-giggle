@@ -1,0 +1,78 @@
+
+.status-ok {
+  background: #088A29 !important;
+  color: white !important;
+  text-align: center !important;
+  border: thick 2px;
+  border-color: white;
+}
+
+.status-inactive {
+  background: #58ACFA !important;
+  color: white !important;
+  text-align: center !important;
+  border: thick 2px;
+  border-color: white;
+}
+
+.status-error {
+  background: #B40404 !important;
+  color: white !important;
+  text-align: center !important;
+  border: thick 2px;
+  border-color: white;
+}
+
+.status-hold {
+  background: yellow !important;
+  color: white !important;
+  text-align: center !important;
+  border: thick 2px;
+  border-color: white;
+}
+
+.console-text-center {
+  text-align: center !important;
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+
+/* Home Page Styles */
+
+.container{
+}
+
+.jumbotron {
+  padding: 2em 2em;
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.2em;
+    .btn {
+      padding: 0.5em;
+    }
+  }
+}
+
+.jumbotron-spacer {
+  margin-top: 0px;
+}
+
+.jumbotron-text {
+  padding-right: 20px;
+}
+
+#jumbotron-text-small {
+  font-size: 18px;
+  padding-right: 20px;
+}
+
+
+  
+
+
+
