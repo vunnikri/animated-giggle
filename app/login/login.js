@@ -20,7 +20,7 @@ angular.module('uiRouterSample.login', [
             '': {
               templateUrl: 'app/login/login.html',
               controller: ['$scope', '$state',
-                function (  $scope,   $$state) {
+                function (  $scope,   $state) {
                   
                   $scope.executeLogin = function () {
                     alert('switch to home view');
@@ -31,7 +31,16 @@ angular.module('uiRouterSample.login', [
 
             // Here we see we are overriding the template that was set by 'contacts.detail'
             'navigation-bar@': {
-              template: ' This is contacts.detail.item overriding the "hint" ui-view'
+              templateUrl: 'app/navbar/login-navbar.html',
+              controller: ['$scope',
+                function ($scope) {
+                  
+                  $scope.showAboutModal = function () {
+                    alert('switch to modal view');
+                    //$("aboutModal").modal((backdrop: false));
+                    //$("aboutModal").modal((backdrop: "static"));
+                  };
+                }]
             }
           }
         });
