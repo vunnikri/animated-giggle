@@ -30,7 +30,7 @@ angular.module('uiRouterSample.login', [
             },
 
             // Here we see we are overriding the template that was set by 'contacts.detail'
-            'navigation-bar@@': {
+            'navigation-bar@': {
               template: ' This is contacts.detail.item overriding the "hint" ui-view'
             }
           }
