@@ -71,8 +71,58 @@
   padding-right: 20px;
 }
 
+.quicklink-feature {
+  margin-bottom: 10px;  
+}
 
-  
+.quicklink {
+  background-color: #eee;
+  cursor: pointer;
+  padding: 20px;
+}
 
+.quicklink:hover {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
 
+.glyphicon-2x {
+  font-size: 20px;
+}
+
+.glyphicon-color {
+  font-size: 20px;
+  color: #337ab7;
+}
+
+.userstats-heading {
+  font-size: 14px;
+  font-variant: small-caps;
+  line-height: 20px;
+}
+
+footer {
+  position: fixed;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  right: 50px;
+}
+
+.userstats {
+  background-color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  margin: -8px;
+}
+
+.userstats:hover {
+  border: 2px dotted;
+  border-color: #2e6da4;
+}
+
+.quick-link-label {
+  top: -100px;
+}
 
