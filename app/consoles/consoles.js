@@ -22,7 +22,7 @@ angular.module('uiRouterSample.consoles', [
 
             '': {
               templateUrl: 'app/consoles/consoles.html',
-              controller: ['$rootScope', '$scope', '$state', '$http', 'singleton'
+              controller: ['$rootScope', '$scope', '$state', '$http', 'singleton',
                 function (  $rootScope, $scope, $state, $http, singleton) {
                   alert("in console controller");
                 }]
