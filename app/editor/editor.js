@@ -20,7 +20,7 @@ angular.module('uiRouterSample.editor', [
               templateUrl: 'app/editor/editor.html',
               controller: ['$scope', '$state',
                 function (  $scope,   $state) {
-                  alert("in editor controller");
+                  //alert("in editor controller");
                 }]
             },
 
