@@ -1,4 +1,4 @@
-angular.module('uiRouterSample.home', [
+angular.module('uiRouterSample.consoles', [
   'ui.router'
 ])
   
@@ -8,19 +8,23 @@ angular.module('uiRouterSample.home', [
     
       $stateProvider
       
-        /////////////////
-        // Home Screen //
-        /////////////////
+        /////////////
+        // Console //
+        /////////////
 
-        .state('home', {
-          url: '/home',
+        .state('consoles', {
+          
+          abstract: false;
+          
+          // this absstract state will append '/consoles' onto the url of all its children
+          url: '/consoles',
           views: {
 
             '': {
-              templateUrl: 'app/home/home.html',
-              controller: ['$scope', '$state',
-                function (  $scope,   $state) {
-                  alert("in home controller");
+              templateUrl: 'app/consoles/consoles.html',
+              controller: ['$rootScope', '$scope', '$state', '$http', 'singleton'
+                function (  $rootScope, $scope, $state, $http, singleton) {
+                  alert("in console controller");
                 }]
             },
 
