@@ -3,6 +3,7 @@ angular.module('uiRouterSample', [
   'uiRouterSample.login',
   'uiRouterSample.home',
   'uiRouterSample.console',
+  'uiRouterSample.editor',
   'ui.router', 
   'ngAnimate'
 ])
