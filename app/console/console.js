@@ -20,7 +20,7 @@ angular.module('uiRouterSample.console', [
               templateUrl: 'app/console/console.html',
               controller: ['$scope', '$state',
                 function (  $scope,   $state) {
-                  alert("in console controller");
+                  //alert("in console controller");
                 }]
             },
 
