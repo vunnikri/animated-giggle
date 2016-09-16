@@ -20,7 +20,7 @@ angular.module('uiRouterSample.home', [
               templateUrl: 'app/home/home.html',
               controller: ['$scope', '$state',
                 function (  $scope,   $state) {
-                  alert("in home controller");
+                  //alert("in home controller");
                 }]
             },
 
