@@ -2,7 +2,7 @@
   <div class="navbar-header">
     <a class="navbar-brand" ui-sref="login" id="brand-name">
       <span>
-        <img class="navbar-brand-image" src="images/brand-logo.png" /> Utopia Immigration Services
+        <img class="navbar-brand-image" src="images/brand-logo.png" /> Everest Immigration Services
       </span>
     </a>
   </div>
@@ -10,7 +10,33 @@
   <ul class="nav navbar-nav">
     <li ui-sref-active="active">
       <a ui-sref="home">
-        <span class="glyphicon glyphicon-home"></span>Home
+        <span class="glyphicon glyphicon-home"></span> Home
+      </a>
+    </li>
+    
+    <li ng-class="{active: $state.includes('consoles')}">
+      <a class="dropdown-toggle" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-list-alt"></span> Configure <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class="{{enableConfiguration}}">
+          <a ng-href="{{ enableConfiguration == 'enabled' ? $state.href('editor') : '' }}">Editor</a>
+        </li>
+        <li class="{{enableConfiguration}}"><a ui-sref="">View Access Controls</a></li>
+        <li class="divider"></li>
+        <li class="{{enableConfiguration}}"><a ui-sref="">Verify Passport Details</a></li>
+        <li class="{{enableConfiguration}}"><a ui-sref="">Check Pool Priority</a></li>
+        <li class="divider"></li>
+        <li class="dropdown-header">ADVANCED OPTIONS <span class="caret"></span></li>
+        <li class="{{ userType == 'superuser' ? 'enabled' : 'disabled' }}"><a ui-sref="">Import</a></li>
+        <li class="{{ userType == 'superuser' ? 'enabled' : 'disabled' }}"><a ui-sref="">Create</a></li>
+        <li class="{{ userType == 'superuser' ? 'enabled' : 'disabled' }}"><a ui-sref="">Delete</a></li>
+      </ul>
+    </li>
+    
+    <li ng-class="{active: $state.includes('editor')}" class="dropdown">
+      <a ui-sref="consoles">
+        <span class="glyphicon glyphicon-th"></span> Console
       </a>
     </li>
     
