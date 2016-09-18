@@ -72,8 +72,9 @@
 }
 
 .jumbotron-image {
-  background-color: red;
-  padding: 0;
+  background-color: red !important;
+  background: red !important;
+  padding: 0 !important;
 }
 
 .quicklink-feature {
