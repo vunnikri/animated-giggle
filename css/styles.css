@@ -71,6 +71,11 @@
   padding-right: 20px;
 }
 
+.jumbotron-image {
+  background-color: red;
+  padding: 0;
+}
+
 .quicklink-feature {
   margin-bottom: 10px;  
 }
