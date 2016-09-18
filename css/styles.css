@@ -110,11 +110,11 @@ footer {
 }
 
 .userstats {
-  background-color: white;
+  background-color: red;
   cursor: pointer;
   padding: 5px;
   border-radius: 10px;
-  margin: -8px;
+  /*margin: -8px;*/
 }
 
 .userstats:hover {
