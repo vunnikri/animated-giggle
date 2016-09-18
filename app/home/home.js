@@ -18,9 +18,16 @@ angular.module('uiRouterSample.home', [
 
             '': {
               templateUrl: 'app/home/home.html',
-              controller: ['$scope', '$state',
-                function (  $scope,   $state) {
-                  //alert("in home controller");
+              controller: ['$scope', '$state', '$rootScope',
+                function (  $scope,   $state, $rootScope) {
+                  
+                  $rootScope.enableConfiguration = "disabled";
+                  
+                  $scope.user = "John";
+                  var homeData = {fullname: "John Doe", applicantsAssigned: "1055", processingCount: "64", 
+                                  jobOffers: "26", provincialOffers: "32", successfulCandidates: "284",
+                                  lastLogin: "2016-05-20 06:34:19" };
+                  $scope.homeData = homeData;
                 }]
             },
 
