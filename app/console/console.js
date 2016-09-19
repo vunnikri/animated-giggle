@@ -21,9 +21,9 @@ angular.module('uiRouterSample.console', [
               controller: ['$scope', '$state', '$rootScope', '$http',
                 function (  $scope,   $state, $rootScope, $http) {
                   
-                  $rootScope.enableConfiguration = "disabled";
+                  //$rootScope.enableConfiguration = "disabled";
                   
-                  alert("console-17");
+                  alert("console-20");
                   
                   // $http.get("assets/data/console-data.txt")
                   // .success(function(data) {
@@ -31,22 +31,7 @@ angular.module('uiRouterSample.console', [
                   //   alert("http complete" + data);
                   // });
                   
-                  $scope.consolegrid.data = [
-  {
-    "name": "Ethel Price",
-    "country": "Scotland",
-    "gender": "female",
-    "dependant": "spouse",
-    "offer": "EMPLOYER",
-    "offerStatus": "OK",
-    "englishScore": "92",
-    "englishScoreStatus": "HIGH",
-    "daysRemaining": "183",
-    "applicantStatus": "APPROVED"
-  }
 
-];
-                  
                   $scope.consolegrid = { enableRowSelection: true, enableRowHeaderSelection: false };
                   
                   $scope.consolegrid.columnDefs = [
