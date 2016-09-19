@@ -1,1 +1,15 @@
-console-data.json
+[
+  {
+    "name": "Ethel Price",
+    "country": "Scotland",
+    "gender": "female",
+    "dependant": "spouse",
+    "offer": "EMPLOYER",
+    "offerStatus": "OK",
+    "englishScore": "92",
+    "englishScoreStatus": "HIGH",
+    "daysRemaining": "183",
+    "applicantStatus": "APPROVED",
+  }
+
+]
