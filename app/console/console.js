@@ -23,7 +23,7 @@ angular.module('uiRouterSample.console', [
                   
                   $rootScope.enableConfiguration = "disabled";
                   
-                  alert("console-7");
+                  alert("console-8");
                   
                   //$http.get("app/console/console.html")
                   
