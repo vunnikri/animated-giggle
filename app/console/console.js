@@ -21,12 +21,12 @@ angular.module('uiRouterSample.console', [
               controller: ['$scope', '$state', '$rootScope', '$http',
                 function (  $scope,   $state, $rootScope, $http) {
                   
-                  alert("console-min-1");
+                  alert("console-min-2");
 
-                  $scope.consolegrid = { enableRowSelection: true, enableRowHeaderSelection: false };
+                  $scope.consolegrid = {};
                   $scope.consolegrid.columnDefs = [
-                    { name: 'Applicant Name', field: 'name', width: "18%" },
-                    { name: 'Gender', field: 'gender', width: "10%" }
+                    { name: 'Applicant Name' },
+                    { name: 'Gender' }
                   ];
                   
                 }]
