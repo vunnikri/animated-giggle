@@ -23,18 +23,23 @@ angular.module('uiRouterSample.console', [
                   
                   $rootScope.enableConfiguration = "disabled";
                   
-                  alert("console-13");
-                  
-                  //$http.get("app/console/data.txt")
+                  alert("console-15");
                   
                   $http.get("assets/data/console-data.txt")
                   .success(function(data) {
-                    //$scope.consolegrid.data = data;
+                    $scope.consolegrid.data = data;
                     alert("http complete" + data);
                   });
                   
-                  alert("console-10");
+                  $scope.consolegrid = { enableRowSelection: true, enableRowHeaderSelection: false };
                   
+                  $scope.consolegrid.columnDefs = [
+                    { name: 'Applicant Name', field: 'name', width: "18%" },
+                    { name: 'Gender', field: 'gender', width: "10%" },
+                    { name: 'Dependants', field: 'dependant', width: "10%" },
+                    
+                    
+                    ]
                   
                 }]
             },
