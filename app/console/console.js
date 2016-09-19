@@ -25,7 +25,7 @@ angular.module('uiRouterSample.console', [
                   
                   alert("console-10");
                   
-                  $http.get("app/console/data.html")
+                  $http.get("app/console/data.json")
                   
                   //$http.get("assets/data/console-data.json")
                   .success(function(data) {
