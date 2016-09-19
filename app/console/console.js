@@ -23,15 +23,15 @@ angular.module('uiRouterSample.console', [
                   
                   $rootScope.enableConfiguration = "disabled";
                   
-                  alert("console-4");
+                  alert("console-5");
                   
-                  $http.get("assets/data/console-data.json")
+                  $http.get("app/console/console.html")
                   .success(function(data) {
                     //$scope.consolegrid.data = data;
                     alert("http complete");
                   });
                   
-                  alert("console-5");
+                  alert("console-6");
                   
                   
                 }]
