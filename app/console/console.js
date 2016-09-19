@@ -23,11 +23,11 @@ angular.module('uiRouterSample.console', [
                   
                   $rootScope.enableConfiguration = "disabled";
                   
-                  alert("console-12");
+                  alert("console-13");
                   
-                  $http.get("app/console/data.txt")
+                  //$http.get("app/console/data.txt")
                   
-                  //$http.get("assets/data/console-data.json")
+                  $http.get("assets/data/console-data.txt")
                   .success(function(data) {
                     //$scope.consolegrid.data = data;
                     alert("http complete" + data);
