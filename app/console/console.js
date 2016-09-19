@@ -23,13 +23,29 @@ angular.module('uiRouterSample.console', [
                   
                   $rootScope.enableConfiguration = "disabled";
                   
-                  alert("console-16");
+                  alert("console-17");
                   
-                  $http.get("assets/data/console-data.txt")
-                  .success(function(data) {
-                    //$scope.consolegrid.data = data;
-                    alert("http complete" + data);
-                  });
+                  // $http.get("assets/data/console-data.txt")
+                  // .success(function(data) {
+                  //   //$scope.consolegrid.data = data;
+                  //   alert("http complete" + data);
+                  // });
+                  
+                  $scope.consolegrid.data = [
+  {
+    "name": "Ethel Price",
+    "country": "Scotland",
+    "gender": "female",
+    "dependant": "spouse",
+    "offer": "EMPLOYER",
+    "offerStatus": "OK",
+    "englishScore": "92",
+    "englishScoreStatus": "HIGH",
+    "daysRemaining": "183",
+    "applicantStatus": "APPROVED"
+  }
+
+];
                   
                   $scope.consolegrid = { enableRowSelection: true, enableRowHeaderSelection: false };
                   
