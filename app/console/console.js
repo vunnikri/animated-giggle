@@ -23,9 +23,9 @@ angular.module('uiRouterSample.console', [
                   
                   $rootScope.enableConfiguration = "disabled";
                   
-                  alert("console-11");
+                  alert("console-12");
                   
-                  $http.get("app/console/data.json")
+                  $http.get("app/console/data.txt")
                   
                   //$http.get("assets/data/console-data.json")
                   .success(function(data) {
