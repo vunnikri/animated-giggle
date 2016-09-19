@@ -18,9 +18,20 @@ angular.module('uiRouterSample.console', [
 
             '': {
               templateUrl: 'app/console/console.html',
-              controller: ['$scope', '$state',
-                function (  $scope,   $state) {
-                  //alert("in console controller");
+              controller: ['$scope', '$state', '$rootScope', '$http',
+                function (  $scope,   $state, $rootScope, $http) {
+                  
+                  $rootScope.enableConfiguration = "disabled";
+                  
+                  $http.get('assets/data/console-data.json')
+                  .success(function(data) {
+                    //$scope.consolegrid.data = data;
+                    alert("http complete");
+                  });
+                  
+                  
+                  
+                  
                 }]
             },
 
