@@ -1,7 +1,5 @@
 angular.module('uiRouterSample.console', [
-  'ui.router',
-  'ui.grid',
-  'ui.grid.selection'
+  'ui.router'
 ])
   
 .config(
