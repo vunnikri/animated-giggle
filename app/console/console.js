@@ -1,5 +1,6 @@
 angular.module('uiRouterSample.console', [
-  'ui.router'
+  'ui.grid',
+	'ui.grid.selection'
 ])
   
 .config(
@@ -21,7 +22,7 @@ angular.module('uiRouterSample.console', [
               controller: ['$scope', '$state', '$rootScope', '$http',
                 function (  $scope,   $state, $rootScope, $http) {
                   
-                  alert("console-min-module-1");
+                  alert("console-min-module-2");
 
                   $scope.consolegrid = {};
                   $scope.consolegrid.columnDefs = [
