@@ -5,8 +5,7 @@ angular.module('uiRouterSample', [
   'uiRouterSample.console',
   'uiRouterSample.editor',
   'ui.router', 
-  'ngAnimate',
-  'ui.grid'
+  'ngAnimate'
 ])
 
 .run(
@@ -16,7 +15,7 @@ angular.module('uiRouterSample', [
     // It's very handy to add references to $state and $stateParams to the $rootScope
     // so that you can access them from any scope within your applications.
     
-    alert("test alert-1");
+    alert("test alert-2");
     
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
